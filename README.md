@@ -1,49 +1,33 @@
-# template-typescript模板项目
+# template-express模板项目
 
 ## 概述
 
-基础的ts模板配置，以及一些附加功能
+基础的express模板配置，以及一些附加功能
 
-- typescript
-- jest
-- eslint
+- 跨域
+- 日志
 
 ## 构建
 
 安装依赖
 
 ```
-pnpm add -D @babel/core @babel/preset-env @babel/preset-typescript @types/jest @types/node eslint jest ts-node typescript
+pnpm add -D @types/body-parser @types/cors @types/express
+pnpm add body-parser cors express
 ```
 
 解释：
 
-- jest：提供ts支持需要依赖以下
-  - @babel/core
-  - @babel/preset-env
-  - @babel/preset-typescript
-  - @types/jest
-  - @types/node
-  - jest 
-  - ts-node：ts格式的配置文件所需
-  - typescript
-- eslint：代码规范
-
-## 配置
-
-- babel.confg.js
-- jest.config.ts
-- tsconfig.json
-- .eslint.js
-- .prettierrc
+- body-parser：解析post的数据
+- cors：允许跨域
 
 ## 运行
 
 ```
-pnpm run test
+pnpm run run
 ```
 
 ## 总结
 
-提供了基础配置的环境，方便开发起步。
+提供了基础配置的express环境，方便开发起步。
 
